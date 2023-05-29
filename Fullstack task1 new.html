@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <header class = "header">
+      <a href="#" class = "logo">Logo</a>
+      
+      <nav class = "navbar">
+        <a href = "#"> Weather </a>
+        <a href = "log.html"> Logout </a>
+      </nav>
+    </header>
+      
+    </header>
+    <div class="wrapper">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="container">
+        <div class="search-container">
+          <form id="form">
+          <input
+            type="text"
+            placeholder="Enter a city name"
+            id="city"
+          />
+          <input type="submit" value="Search">
+        </form>
+        </div>
+        <div id="result"></div>
+      </div>
+    </div>
+
+    <div class="future-forecast">
+      <div class="today" id="current-temp">
+          <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+          <div class="other">
+              <div class="day1">Monday</div>
+              <div id="day1Min"></div>
+              <div id="day1Max"></div>
+          </div>
+      </div>
+
+      <div class="weather-forecast" id="weather-forecast">
+          <div class="weather-forecast-item">
+              <div class="day2">Tue</div>
+              <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+              <div id="day2Min"></div>
+              <div id="day2Max"></div>
+          </div>
+          <div class="weather-forecast-item">
+              <div class="day3">Wed</div>
+              <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+              <div id="day3Min"></div>
+              <div id="day3Max"></div>
+          </div>
+          <div class="weather-forecast-item">
+              <div class="day4">Thur</div>
+              <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+              <div id="day4Min"></div>
+              <div id="day4Max"></div>
+          </div>
+          <div class="weather-forecast-item">
+              <div class="day5">Fri</div>
+              <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+              <div id="day5Min"></div>
+              <div id="day5Max"></div>
+          </div>
+          <div class="weather-forecast-item">
+              <div class="day6">Sat</div>
+              <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+              <div id="day6Min"></div>
+              <div id="day6Max"></div>
+          </div>
+
+      </div>
+  </div>
+    <!-- Script -->
+    <script src="./script.js"></script>
+  </body>
+</html>
